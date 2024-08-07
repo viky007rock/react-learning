@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nameste React</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+
+<body>
+    <h1>Hello Top of Root</h1>
+    <!-- React will only working only inside the div id="root" element -->
+    <div id="root">
+        <!-- 
+        When page load and while root.render() called it will replaced all the element from the root element with the HTML element which we 
+        through the render method. 
+        -->
+        <h1>I'm Here</h1>
+    </div>
+    <h1>Hello bottom of Root</h1>
+</body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- <script>
+    const heading = document.createElement("h1");
+    heading.innerHTML = "Hello World";
+    const root = document.getElementById("root");
+    root.appendChild(heading);
+</script> -->
+<script src="./app.js " ></script>
+
+</html>
