@@ -57,10 +57,13 @@
 </div>
 */
 
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I'm H1 Tag"),
-    React.createElement("h2", {}, "I'm H2 Tag"),
+    React.createElement("h1", {}, "This is My Learning react "),
+    React.createElement("h2", {}, "TEST TEST TEST"),
   ]),
   React.createElement("div", { id: "child2" }, [
     React.createElement("h1", {}, "I'm H1 Tag"),
@@ -68,15 +71,13 @@ const parent = React.createElement("div", { id: "parent" }, [
   ]),
 ]);
 
-
-
-
 //syntax:- createElement({html tage},{attribute object},{what we need to do inside that tag})
-//Heading variable data is currently an json object 
+//Heading variable data is currently an json object
 const heading = React.createElement(
-    "h1",
-    {id:"heading"},
-    "Hello World From React !!!!!!");
+  "h1",
+  { id: "heading" },
+  "Hello World From React !!!!!!"
+);
 //ReactDOM is reponsible for creating "Root" element in HTML.
 // In react Root is the place where we render our DOM element of react.
 const root = ReactDOM.createRoot(document.getElementById("root"));
